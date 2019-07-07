@@ -1,0 +1,7 @@
+connection   -> redis接続用のファイル
+dupefilter   -> scrpayのdefaultの同じurlを削除するフィルターを入れ替える
+picklecompat -> 序列化
+pipelines    -> itemをredisに保存用
+queue        ->requestのquese処理,三つのqueseが使用可能となる(先に入って先で、先に入って後出、)
+sched
+spider       ->start_urlを読み込み
