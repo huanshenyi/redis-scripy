@@ -63,7 +63,7 @@ class Base(object):
         """Clear queue/stack"""
         self.server.delete(self.key)
 
-
+# first in frist out(先に入って先に出るqueue)
 class FifoQueue(Base):
     """Per-spider FIFO queue"""
 
@@ -116,7 +116,7 @@ class PriorityQueue(Base):
         if results:
             return self._decode_request(results[0])
 
-
+# 後に入ったやつが先に出る
 class LifoQueue(Base):
     """Per-spider LIFO queue."""
 
